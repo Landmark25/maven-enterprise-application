@@ -1,2 +1,3 @@
 FROM jboss/wildfly
-COPY target/*.war /opt/jboss/wildfly/standalone/deployments/
+# ADD target/*.war /opt/jboss/wildfly/standalone/deployments/
+COPY /var/lib/jenkins/workspace/Fintech_pipeline-test/MavenEnterpriseApp-ear/target/*.war /opt/jboss/wildfly/standalone/deployments/
